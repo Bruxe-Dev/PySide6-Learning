@@ -1,27 +1,20 @@
+import sys
 from pathlib import Path
 from PyQt6.QtWidgets import QApplication, QMainWindow, QPushButton
 from PyQt6.QtGui import QIcon
 
+BASE_DIR = Path(__file__).resolve().parent.parent
+image_path = BASE_DIR / "images"/"logo.png"
+
 app = QApplication([])
-
-BASE_DIR = Path(__file__).resolve().parent
-image = BASE_DIR / "images" / "logo.png"
-
-print(image)
-print(image.exists())
-
-icon = QIcon(str(image))
-print(icon.isNull())
-
-app.setWindowIcon(icon)
-
 window = QMainWindow()
+
+window.setWindowIcon(QIcon(str(image_path)))
 window.setWindowTitle("LESSON 1")
 window.setGeometry(100, 100, 600, 400)
-window.setWindowIcon(icon)
 
-button = QPushButton("CLICK", window)
-button.setGeometry(200, 150, 200, 100)
+button = QPushButton("CLICK",window)
+button.setGeometry(100, 100, 200, 100)
 
 window.show()
 app.exec()
