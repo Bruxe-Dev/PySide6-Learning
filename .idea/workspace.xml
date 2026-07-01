@@ -4,7 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="485da5f8-4e21-421b-95bb-fd985a42c079" name="Changes" comment="Finished myu first lesson on how to make a skeletal window">
+    <list default="true" id="485da5f8-4e21-421b-95bb-fd985a42c079" name="Changes" comment="Made some changes">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test_ui.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_ui.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -91,12 +92,21 @@
       <option name="project" value="LOCAL" />
       <updated>1782895914852</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Made some changes">
+      <option name="closed" value="true" />
+      <created>1782896213531</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1782896213531</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="I am learning how to make UI using pySide so, I am using different resources for this learning." />
     <MESSAGE value="Finished myu first lesson on how to make a skeletal window" />
-    <option name="LAST_COMMIT_MESSAGE" value="Finished myu first lesson on how to make a skeletal window" />
+    <MESSAGE value="Made some changes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Made some changes" />
   </component>
 </project>

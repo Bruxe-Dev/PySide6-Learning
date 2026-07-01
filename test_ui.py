@@ -1,20 +1,28 @@
-import sys
-from pathlib import Path
-from PyQt6.QtWidgets import QApplication, QMainWindow, QPushButton
-from PyQt6.QtGui import QIcon
-
-BASE_DIR = Path(__file__).resolve().parent.parent
-image_path = BASE_DIR / "images"/"logo.png"
+from PyQt6.QtWidgets import QApplication, QMainWindow, QPushButton, QLabel
+from PyQt6.QtCore import Qt
 
 app = QApplication([])
-window = QMainWindow()
 
-window.setWindowIcon(QIcon(str(image_path)))
-window.setWindowTitle("LESSON 1")
+window = QMainWindow()
+window.setWindowTitle("AirSketch")
 window.setGeometry(100, 100, 600, 400)
 
-button = QPushButton("CLICK",window)
-button.setGeometry(100, 100, 200, 100)
+click_count = 0
+
+label = QLabel("Click count: 0", window)
+label.setGeometry(150, 100, 300, 50)
+
+def on_button_clicked():
+    global click_count  # Allow this function to modify the global variable
+    click_count += 1    # Increase the count by 1
+    label.setText(f"Click count: {click_count}")  # Update the label text
+    print(f"Button clicked! Count: {click_count}")
+
+button = QPushButton("Click Me!", window)
+button.setGeometry(200, 200, 200, 80)
+
+button.clicked.connect(on_button_clicked)
+
 
 window.show()
 app.exec()
